@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime properties</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/e236dc9dfa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="overflow-x-hidden relative z-0 body">
+    <div
+      class="menuPage absolute z-10 bg-black text-white top-0 right-0 p-7 h-full w-72 text-right transition-all duration-500 ease-in translate-x-400%"
+    >
+      <!-- close the menuBar -->
+      <div class="">
+        <i
+          class="closeMenuPageBtn cursor-pointer fa-solid fa-xmark fa-xl text-black bg-white p-4 rounded-full"
+        ></i>
+      </div>
+      <!-- all btn -->
+      <div
+        class="allbtnDivide cursor-pointer flex flex-col mt-10 text-center space-y-4 divide-y-4"
+      >
+        <a
+          class="hover:bg-white hover:text-black transition-all duration-500 ease-out"
+          >Home</a
+        >
+        <a
+          class="hover:bg-white hover:text-black transition-all duration-500 ease-out"
+          >Services</a
+        >
+        <a
+          class="hover:bg-white hover:text-black sha transition-all duration-500 ease-out"
+          >About Us</a
+        >
+        <a
+          class="hover:bg-white hover:text-black transition-all duration-500 ease-out"
+          >Contact Us</a
+        >
+      </div>
+      <!-- all btn -->
+    </div>
+
+    <nav
+      class="bg-white shadow-xl text-gray-500 navbar z-10 transition-all duration-700"
+    >
+      <div class="max-w-full mx-auto px-4">
+        <div class="flex justify-between">
+          <div class="leftSideMenu flex space-x-7 mr-8">
+            <a class="flex items-center px-2" href="#">
+              <img
+                class="h-10 w-10 m-4"
+                src="./images/home-office-fill (1).png"
+                alt=""
+              />
+              <span class="font-bold text-xl">Prime properties</span>
+            </a>
+          </div>
+          <div class="menuBtn md:hidden flex items-center">
+            <!-- for menu btn -->
+
+            <i
+              class="menubtn fa-solid fa-bars fa-xl cursor-pointer"
+              style="color: #000000"
+            ></i>
+
+            <!-- for menu btn -->
+          </div>
+          <div
+            class="hidden md:flex cursor-pointer space-x-5 items-center font-bold pr-10"
+          >
+            <a class="text-green-500 py-4 px-2 border-b-4 border-green-500"
+              >Home</a
+            >
+            <a class="hover:text-green-500 transition duration-300">Services</a>
+            <a class="hover:text-green-500 transition duration-300">About</a>
+            <a class="hover:text-green-500 transition duration-300"
+              >Contact Us</a
+            >
+            <button href="" class="darkmode">
+              <i
+                class="darkmodeBtn fa-solid fa-circle-half-stroke fa-xl"
+                style="color: black"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- webpage banner -->
+    <main
+      class="mt-10 px-4 md:mt-18 mx-auto max-w-7xl lg:mt-20 lg:px-8 xl:mt-28"
+    >
+      <div class="sm:text-center lg:text-left">
+        <h1
+          class="tracking-tight font-extrabold text-4xl sm:text-5xl md:text-6xl"
+        >
+          <span class="changeToDarkmode block xl:inline"
+            >Premium properties</span
+          >
+          <span class="block text-green-500 xl:inline">Non-premium Prices</span>
+        </h1>
+        <p
+          class="changeToDarkmode text-base mt-3 text-gray-500 md:text-xl md:text-justify md:mt-12 sm:mt-5 sm:text-lg sm:text-justify sm:max-w-xl sm:mx-auto lg:mx-auto lg:text-justify"
+        >
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+          iusto harum deserunt deleniti cum quia dolorum rem labore culpa
+          molestias quo non quas minus, delectus corrupti eveniet, sint
+          inventore? Quisquam, rerum. Beatae natus eveniet minima saepe atque
+          corporis quas deserunt?
+        </p>
+        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center">
+          <div class="m-2">
+            <button
+              class="flex justify-center rounded-md bg-green-500 text-white px-8 py-3 z-0 relative transition-colors before:absolute before:top-0 before:left-0 before:rounded-md before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-gray-900 before:transition-transform before:duration-500 before:content-[' '] before:hover:scale-x-100"
+            >
+              View Properties
+            </button>
+          </div>
+          <div class="m-2">
+            <button
+              class="flex justify-center rounded-md bg-green-500 text-white px-8 py-3 z-0 relative transition-colors before:absolute before:top-0 before:left-0 before:rounded-md before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-gray-900 before:transition-transform before:duration-500 before:content-[' '] before:hover:scale-x-100"
+            >
+              Explore Locations
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- hint:create allDiv-transition in ./src/style.css in @layer component once and use it in my css code and js code -->
+    <!-- webpage banner -->
+    <div class="allDiv-transition">
+      <div class="mt-5 p-10">
+        <h2 class="text-3xl font-semibold text-gray-500 mb-2 text-center">
+          Recent Properties
+        </h2>
+      </div>
+
+      <!-- card section -->
+      <!-- card container -->
+      <div
+        class="grid gap-5 p-10 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3"
+      >
+        <!-- card -->
+        <div
+          class="rounded overflow-hidden shadow-lg hover:shadow-2xl hover:scale-95 transition-all duration-700"
+        >
+          <img
+            class="w-full object-cover"
+            src="./images/Card1/orchid villa.jpg"
+            alt=""
+          />
+          <div class="px-6 py-4">
+            <div class="changeToDarkmode font-bold text-xl mb-2">
+              Orchid Villa
+            </div>
+            <p class="changeToDarkmode text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              voluptatibus asperiores a natus. Expedita est deserunt vitae a
+              officiis commodi aliquid, asperiores id culpa ad odio veritatis
+              aut, iste impedit!
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="tracking-wide inline-block text-green-500 font-bold text-sm px-3 py-1 mr-2 mb-2"
+              >$4, 500,000</span
+            >
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >7 Beds</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >9 Baths</span
+            >
+          </div>
+          <div class="px-6 pt-4 pb-10">
+            <button
+              class="inline-block bg-green-500 rounded-full px-3 py-1 font-bold text-white mr-2 mb-2 z-10 relative transition-colors before:absolute before:top-0 before:left-0 before:rounded-full before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-gray-900 before:transition-transform before:duration-500 before:content-[' '] before:hover:scale-x-100"
+            >
+              View Property
+            </button>
+          </div>
+        </div>
+        <!-- card -->
+        <!-- card -->
+        <div
+          class="rounded overflow-hidden shadow-lg hover:shadow-2xl hover:scale-95 transition-all duration-700"
+        >
+          <img
+            class="w-full object-cover"
+            src="./images/Card1/Garcia.jpg"
+            alt=""
+          />
+          <div class="px-6 py-4">
+            <div class="changeToDarkmode font-bold text-xl mb-2">
+              577 Garcia
+            </div>
+            <p class="changeToDarkmode text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              voluptatibus asperiores a natus. Expedita est deserunt vitae a
+              officiis commodi aliquid, asperiores id culpa ad odio veritatis
+              aut, iste impedit!
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="tracking-wide inline-block text-green-500 font-bold text-sm px-3 py-1 mr-2 mb-2"
+              >$4, 500,000</span
+            >
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >7 Beds</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >9 Baths</span
+            >
+          </div>
+          <div class="px-6 pt-4 pb-10">
+            <button
+              class="inline-block bg-green-500 rounded-full px-3 py-1 font-bold text-white mr-2 mb-2 z-10 relative transition-colors before:absolute before:top-0 before:left-0 before:rounded-full before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-gray-900 before:transition-transform before:duration-500 before:content-[' '] before:hover:scale-x-100"
+            >
+              View Property
+            </button>
+          </div>
+        </div>
+        <!-- card -->
+        <!-- card -->
+        <div
+          class="rounded overflow-hidden shadow-lg hover:shadow-2xl hover:scale-95 transition-all duration-700"
+        >
+          <img
+            class="w-full object-cover"
+            src="./images/Card1/nexa.jpg"
+            alt=""
+          />
+          <div class="px-6 py-4">
+            <div class="changeToDarkmode font-bold text-xl mb-2">
+              Nexa Epitome
+            </div>
+            <p class="changeToDarkmode text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              voluptatibus asperiores a natus. Expedita est deserunt vitae a
+              officiis commodi aliquid, asperiores id culpa ad odio veritatis
+              aut, iste impedit!
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="tracking-wide inline-block text-green-500 font-bold text-sm px-3 py-1 mr-2 mb-2"
+              >$4, 500,000</span
+            >
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >7 Beds</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >9 Baths</span
+            >
+          </div>
+          <div class="px-6 pt-4 pb-10">
+            <button
+              class="inline-block bg-green-500 rounded-full px-3 py-1 font-bold text-white mr-2 mb-2 z-10 relative transition-colors before:absolute before:top-0 before:left-0 before:rounded-full before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-gray-900 before:transition-transform before:duration-500 before:content-[' '] before:hover:scale-x-100"
+            >
+              View Property
+            </button>
+          </div>
+        </div>
+        <!-- card -->
+      </div>
+      <!-- card section -->
+    </div>
+
+    <!-- Banner -->
+    <div class="allDiv-transition">
+      <div
+        class="h-screen py-20"
+        style="
+          background-image: linear-gradient(
+              rgb(0, 0, 0, 0.5),
+              rgb(0, 0, 0, 0.5)
+            ),
+            url(./images/banner.jpg);
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="container mx-auto px-14 mt-40">
+          <h2 class="text-4xl font-bold text-white mb-2">
+            Experience Luxury Like Never Before
+          </h2>
+          <h3 class="text-2xl mb-8 text-gray-200">
+            50+ Exotic locations across the globe
+          </h3>
+          <button
+            class="text-white uppercase border-2 px-8 py-4 font-bold shadow-lg tracking-wide hover:bg-white hover:text-black transition-all duration-500"
+          >
+            Explore Locations
+          </button>
+        </div>
+      </div>
+      <!-- Banner -->
+    </div>
+
+    <div class="allDiv-transition">
+      <!-- card section -->
+      <div class="mt-5 p-10">
+        <h2 class="text-3xl font-semibold text-gray-500 mb-2 text-center">
+          Locations
+        </h2>
+      </div>
+      <!-- card container -->
+      <div
+        class="grid gap-5 p-10 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3"
+      >
+        <!-- card -->
+        <div
+          class="rounded overflow-hidden shadow-lg hover:shadow-2xl hover:scale-95 transition-all duration-700"
+        >
+          <img class="w-full h-96" src="images/card2/new york.jpg" alt="" />
+          <div class="px-6 py-4">
+            <div class="changeToDarkmode font-bold text-xl mb-2">New York</div>
+            <p class="changeToDarkmode text-gray-700 mb-10">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
+              at nam quis ullam minima sed vero autem, cumque ipsa nisi
+              praesentium temporibus, eos dignissimos quos quibusdam fugiat rem
+              cum sequi natus! Magnam pariatur amet similique velit molestiae!
+              Repudiandae unde maxime amet ab suscipit, architecto expedita
+              temporibus, dolores atque vel mollitia. Quia aspernatur ut omnis
+              odit?
+            </p>
+          </div>
+        </div>
+        <!-- card -->
+        <!-- card -->
+        <div
+          class="rounded overflow-hidden shadow-lg hover:shadow-2xl hover:scale-95 transition-all duration-700"
+        >
+          <img
+            class="w-full h-96"
+            src="./images/card2/san fransico.jpg"
+            alt=""
+          />
+          <div class="px-6 py-4">
+            <div class="changeToDarkmode font-bold text-xl mb-2">
+              San Fransisco
+            </div>
+            <p class="changeToDarkmode text-gray-700 mb-10">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              voluptatibus asperiores a natus. Expedita est deserunt vitae a
+              officiis commodi aliquid, asperiores id culpa ad odio veritatis
+              aut, iste impedit!
+            </p>
+          </div>
+        </div>
+        <!-- card -->
+        <!-- card -->
+        <div
+          class="rounded overflow-hidden shadow-lg hover:shadow-2xl hover:scale-95 transition-all duration-700"
+        >
+          <img class="w-full h-96" src="./images/card2/new york2.jpg" alt="" />
+          <div class="px-6 py-4">
+            <div class="changeToDarkmode font-bold text-xl mb-2">New York</div>
+            <p class="changeToDarkmode text-gray-700 mb-10">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              voluptatibus asperiores a natus. Expedita est deserunt vitae a
+              officiis commodi aliquid, asperiores id culpa ad odio veritatis
+              aut, iste impedit!
+            </p>
+          </div>
+        </div>
+        <!-- card -->
+      </div>
+      <!-- card section -->
+    </div>
+    <div class="allDiv-transition">
+      <!-- Banner -->
+      <div
+        class="py-20"
+        style="
+          background: linear-gradient(
+            135deg,
+            hsla(164, 76%, 35%, 1) 23%,
+            hsla(165, 71%, 42%, 1) 39%,
+            hsla(164, 83%, 33%, 1) 50%,
+            hsla(161, 46%, 49%, 1) 60%
+          );
+        "
+      >
+        <div class="container mx-auto px-14">
+          <h2 class="text-4xl font-bold text-white mb-2">
+            Save upto 50% on broker commisions
+          </h2>
+          <h3 class="text-2xl mb-8 text-gray-200">Lowest brokerage fees</h3>
+          <button
+            class="text-black bg-white uppercase border-2 px-8 py-4 font-bold shadow-lg tracking-wide rounded-2xl hover:bg-white hover:text-black transition-all duration-500"
+          >
+            Enquire
+          </button>
+        </div>
+      </div>
+      <!-- Banner -->
+    </div>
+    <div class="allDiv-transition">
+      <!-- another card -->
+      <div class="mt-5 p-10">
+        <h2 class="text-3xl font-semibold text-gray-500 mb-2 text-center">
+          What clients say about us ?
+        </h2>
+      </div>
+      <!-- all cards -->
+      <div
+        class="p-10 grid grid-cols-1 gap-5 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3"
+      >
+        <!-- card -->
+        <div
+          class="thirdCards w-72 mx-auto bg-white rounded-xl p-4 shadow-lg hover:shadow-2xl hover:scale-95 transition-all duration-700"
+        >
+          <p class="text-gray-600">
+            <span class="text-green-500 text-lg font-bold">"</span>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+            exercitationem ullam nesciunt saepe aliquam. Ducimus!
+            <span class="text-green-500 text-lg font-bold">"</span>
+          </p>
+          <div class="flex bg-green-200 rounded-full items-center mt-10">
+            <a href="" class="block relative">
+              <img
+                class="h-12 w-12 rounded-full mx-auto"
+                src="./images/icons8-user-100.png"
+                alt=""
+              />
+            </a>
+            <div class="flex flex-col ml-2 justify-between">
+              <span class="text-sm text-green-500 font-semibold"
+                >Sntsani_ponkey
+              </span>
+              <span class="text-xs flex">Creator</span>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <!-- card -->
+        <div
+          class="thirdCards w-72 mx-auto bg-white rounded-xl p-4 shadow-lg hover:shadow-2xl hover:scale-95 transition-all duration-700"
+        >
+          <p class="text-gray-600">
+            <span class="text-green-500 text-lg font-bold">"</span>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+            exercitationem ullam nesciunt saepe aliquam. Ducimus!
+            <span class="text-green-500 text-lg font-bold">"</span>
+          </p>
+          <div class="flex bg-green-200 rounded-full items-center mt-10">
+            <a href="" class="block relative">
+              <img
+                class="h-12 w-12 rounded-full mx-auto"
+                src="./images/icons8-user-100.png"
+                alt=""
+              />
+            </a>
+            <div class="flex flex-col ml-2 justify-between">
+              <span class="text-sm text-green-500 font-semibold"
+                >Sntsani_ponkey
+              </span>
+              <span class="text-xs flex">Creator</span>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <!-- card -->
+        <div
+          class="thirdCards w-72 mx-auto bg-white rounded-xl p-4 shadow-lg hover:shadow-2xl hover:scale-95 transition-all duration-700"
+        >
+          <p class="text-gray-600">
+            <span class="text-green-500 text-lg font-bold">"</span>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+            exercitationem ullam nesciunt saepe aliquam. Ducimus!
+            <span class="text-green-500 text-lg font-bold">"</span>
+          </p>
+          <div class="flex bg-green-200 rounded-full items-center mt-10">
+            <a href="" class="block relative">
+              <img
+                class="h-12 w-12 rounded-full mx-auto"
+                src="./images/icons8-user-100.png"
+                alt=""
+              />
+            </a>
+            <div class="flex flex-col ml-2 justify-between">
+              <span class="text-sm text-green-500 font-semibold"
+                >Sntsani_ponkey
+              </span>
+              <span class="text-xs flex">Creator</span>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+      </div>
+      <!-- all cards -->
+      <!-- another card -->
+    </div>
+    <div class="allDiv-transition">
+      <!-- Name and LastName -->
+      <div class="mt-5 p-10">
+        <h2 class="text-3xl font-semibold text-gray-500 mb-2 text-center">
+          Contact Us
+        </h2>
+      </div>
+
+      <div
+        class="mt-5 flex p-10 justify-center items-center"
+        style="
+          background: linear-gradient(
+            135deg,
+            hsla(164, 76%, 35%, 1) 23%,
+            hsla(165, 71%, 42%, 1) 39%,
+            hsla(164, 83%, 33%, 1) 50%,
+            hsla(161, 46%, 49%, 1) 60%
+          );
+        "
+      >
+        <form action="#" class="w-full max-w-lg">
+          <div class="flex flex-wrap mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                for="#"
+                class="block uppercase text-xs text-gray-700 font-bold mb-2 tracking-wider"
+                >FirstName:</label
+              >
+              <input
+                type="text"
+                class="block py-3 px-4 rounded text-gray-700 w-full border border-green-500 mb-3 outline-none"
+                placeholder="Taha"
+              />
+              <p class="text-sm text-green-900 italic">
+                Please fill out this field.
+              </p>
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                for="#"
+                class="block uppercase text-xs text-gray-700 font-bold mb-2 tracking-wider outline-none"
+                >LastName:</label
+              >
+              <input
+                type="text"
+                class="block py-3 px-4 rounded text-gray-700 w-full border border-green-500 outline-none"
+                placeholder="Sahraei"
+              />
+            </div>
+          </div>
+          <!-- Name and LastName -->
+          <!--Email-div -->
+          <div class="flex mb-6">
+            <div class="w-full px-3">
+              <label
+                for=""
+                class="block uppercase text-xs text-gray-700 font-bold mb-2 tracking-wider"
+                >Email:</label
+              >
+              <input
+                type="text"
+                class="block py-3 px-4 rounded text-gray-700 w-full border border-green-500 outline-none"
+                placeholder="Examole@example.com"
+              />
+              <p class="text-sm mt-3 text-gray-800 italic">
+                Some tips - as long as needed.
+              </p>
+            </div>
+          </div>
+          <!--Email-div -->
+
+          <!-- Message div -->
+          <div class="flex mb-6">
+            <div class="w-full px-3">
+              <label
+                for=""
+                class="block uppercase text-xs text-gray-700 font-bold mb-2 tracking-wider"
+                >Message:</label
+              >
+              <textarea
+                class="resize-none appearance-none h-48 block py-3 px-4 rounded text-gray-700 w-full border border-green-500 outline-none"
+                placeholder=""
+              ></textarea>
+              <p class="text-sm mt-3 text-gray-800 italic">
+                Please fill out this field.
+              </p>
+            </div>
+          </div>
+          <!-- Message div -->
+          <!-- button div -->
+          <div class="md:flex md:items-center">
+            <div class="md:w-1/3">
+              <button
+                class="shadow bg-green-400 text-shite py-2 mx-2 px-4 rounded hover:bg-gray-800 hover:text-white ease-in duration-200"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+          <!-- button div -->
+        </form>
+      </div>
+    </div>
+    <div class="allDiv-transition">
+      <!-- footer Starts -->
+      <footer class="pt-40 px-4 divide-y">
+        <div class="container flex flex-col justify-between mx-auto space-y-8">
+          <div class="">
+            <a class="flex justify-center" href="">
+              <div class="flex h-12 w-12 items-center">
+                <i
+                  class="changeColor fa-solid fa-house fa-2xl"
+                  style="color: black"
+                ></i>
+              </div>
+              <span class="font-semibold text-gray-500 text-3xl text-center">
+                Prime Properties
+              </span>
+            </a>
+          </div>
+          <!-- menu footer -->
+          <div
+            class="grid grid-cols-2 gap-x-3 gap-y-8 px-16 text-sm sm:grid-cols-4"
+          >
+            <div class="space-y-3 changeToDarkmode">
+              <h3 class="uppercase text-green-500 tracking-wide font-bold">
+                Product
+              </h3>
+              <ul class="space-y-1 font-semibold">
+                <li>
+                  <a href="#">Features</a>
+                </li>
+                <li>
+                  <a href="#">Integrations</a>
+                </li>
+                <li>
+                  <a href="#">FAQs</a>
+                </li>
+                <li>
+                  <a href="#">Pricing</a>
+                </li>
+              </ul>
+            </div>
+            <div class="space-y-3 changeToDarkmode">
+              <h3 class="uppercase text-green-500 tracking-wide font-bold">
+                company
+              </h3>
+              <ul class="space-y-1 font-semibold">
+                <li>
+                  <a href="#">Features</a>
+                </li>
+                <li>
+                  <a href="#">Integrations</a>
+                </li>
+              </ul>
+            </div>
+            <div class="space-y-3 changeToDarkmode">
+              <h3 class="uppercase text-green-500 tracking-wide font-bold">
+                developers
+              </h3>
+              <ul class="space-y-1 font-semibold">
+                <li>
+                  <a href="#">Public API</a>
+                </li>
+                <li>
+                  <a href="#">Ducumentation</a>
+                </li>
+                <li>
+                  <a href="#">Guides</a>
+                </li>
+              </ul>
+            </div>
+            <div class="space-y-3 changeToDarkmode">
+              <h3 class="uppercase text-green-500 tracking-wide font-bold">
+                Social Media
+              </h3>
+              <div class="flex justify-start space-x-5">
+                <a href="">
+                  <i
+                    class="fa-brands fa-facebook fa-2xl"
+                    style="color: #0948b3"
+                  ></i>
+                </a>
+                <a href="">
+                  <i
+                    class="changeColor fa-brands fa-x-twitter fa-2xl"
+                    style="color: black"
+                  ></i>
+                </a>
+                <a href="">
+                  <i
+                    class="fa-brands fa-instagram fa-2xl"
+                    style="color: #b6170c"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- menu footer -->
+        </div>
+        <div class="text-center text-green-500 text-sm py-6">
+          @ 1968 Company Co.All rights reserved
+        </div>
+      </footer>
+    </div>
+    <!-- footer ends -->
+    <script src="./script.js"></script>
+  </body>
+</html>

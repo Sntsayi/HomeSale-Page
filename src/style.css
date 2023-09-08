@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .allDiv-transition {
+    @apply -translate-x-400% transition-transform duration-1500 ease-in-out;
+  }
+}
+@layer components {
+  .navScroll-sticky-whiteTheme {
+    @apply bg-bestBlue z-50 text-white   ease-out fixed top-0 w-full;
+  }
+}
+@layer components {
+  .navScroll-sticky-darkTheme {
+    @apply bg-bestBlue z-50 text-white   ease-out fixed top-0 w-full;
+  }
+}
