@@ -87,6 +87,7 @@ const allBtnDivide = document.querySelector(".allbtnDivide");
 menuBtn.addEventListener("click", () => {
   menuPage.classList.add("z-50");
   menuPage.classList.remove("translate-x-400%");
+  body.classList.add("overflow-y-hidden");
 
   if (body.classList.contains("bg-black")) {
     menuPage.classList.add("bg-white");
@@ -109,6 +110,7 @@ menuBtn.addEventListener("click", () => {
 });
 closeMenuPage.addEventListener("click", () => {
   menuPage.classList.add("translate-x-400%");
+  body.classList.remove("overflow-y-hidden");
 });
 
 // for menuBtn
